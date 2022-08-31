@@ -1,0 +1,186 @@
+body {
+  background-color: black;
+}
+
+.nav1 {
+  background-color: red;
+}
+
+.nav1 ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav1 li:last-child {
+  border-right: none;
+}
+
+.nav1 li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.nav1 li a:hover:not(.active) {
+  color: rgb(37, 28, 28);
+}
+
+.nav2 ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.nav2 li:last-child {
+  border-right: none;
+}
+
+.nav2 li a {
+  display: block;
+  color: rgb(37, 28, 28);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav2 li a:hover:not(.active) {
+  /* background-color: #111; */
+  color: #ff0000;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.bag1 {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 90px;
+}
+
+.bag1 img {
+  width: 300px;
+  height: 320px;
+  padding-right: 80px;
+  border-radius: 5%;
+}
+
+.pagebag1 p {
+  width: 80%;
+}
+
+.pagebag1 h3 {
+  color: #ff0000;
+}
+
+.bag2 {
+  color: white;
+  text-align: center;
+}
+
+.bag3 {
+  margin: 90px;
+  color: white;
+}
+
+.bag3page1 {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+/* .bag3page1 img {
+    width: 60%;
+  } */
+
+.bag3page2 {
+  display: flex;
+  padding-top: 50px;
+  /* justify-content: space-around; */
+  /* flex-direction: row; */
+}
+
+.bag3page2 img {
+  width: 40%;
+}
+
+.canterFE74 {
+  width: 60%;
+}
+
+.newPajeroSport {
+  width: 84%;
+}
+
+.canterFE75 {
+  width: 70%;
+}
+
+footer {
+  padding: 20px 90px 20px 90px;
+  background-color: rgb(26, 59, 92);
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact a {
+  color: yellow;
+}
+
+.contact {
+  color: white;
+}
+
+.dealer {
+  color: white;
+}
+
+.pajeroBanner img {
+  width: 100%;
+}
+
+.mican {
+  color: white;
+  text-align: center;
+}
+
+.priceList {
+  background-color: white;
+  padding: 90px;
+  color: black;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
