@@ -31,9 +31,20 @@ body {
 
 .nav2 ul {
   list-style-type: none;
+  align-items: center;
   margin: 0;
   overflow: hidden;
   background-color: white;
+}
+
+/* .nav2edited {
+  display: flex;
+  flex-direction: row;
+} */
+
+.nav2edited {
+  width: 20%;
+  padding-left: 39px;
 }
 
 .nav2 li:last-child {
@@ -69,7 +80,7 @@ body {
   width: 300px;
   height: 320px;
   padding-right: 80px;
-  border-radius: 5%;
+  border-radius: 25px;
 }
 
 .pagebag1 p {
