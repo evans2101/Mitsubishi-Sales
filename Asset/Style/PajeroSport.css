@@ -128,10 +128,13 @@ footer {
   background-color: rgb(26, 59, 92);
   display: flex;
   justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .contact a {
-  color: yellow;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .contact {
@@ -153,7 +156,7 @@ footer {
 
 .priceList {
   background-color: white;
-  padding: 90px;
+  padding: 100px;
   color: black;
 }
 
@@ -183,4 +186,115 @@ footer {
   text-align: left;
   background-color: #04aa6d;
   color: white;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .nav2 {
+    order: inherit;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .nav1 li {
+    font-size: 6px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+  }
+  .nav2 li {
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+    display: flex;
+  }
+  .navDown {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navDown img {
+    display: none;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .noted {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .priceList {
+    padding: 0px;
+    color: black;
+    text-align: center;
+  }
+
+  .pajeroBanner {
+    width: auto;
+  }
+
+  .table {
+    display: grid;
+    max-width: 0.3rem;
+  }
+  .mican {
+    font-size: medium;
+  }
+  .priceList h1 {
+    font-size: x-large;
+    padding-top: 20px;
+  }
+  .contact a {
+    color: yellow;
+  }
+  tr,
+  td {
+    text-align: left;
+  }
+  tr {
+    font-size: medium;
+  }
+  td {
+    font-size: small;
+  }
+
+  /* #customers {
+    /* width: 135px; */
+  /* width: auto;
+    margin: 0;
+    display: flex; */
+  /* display: block; */
+  /* overflow-x: auto;
+    padding-right: 500px;
+    float: left;
+    text-transform: uppercase; */
+  /* } */
+  */
+
+  /* .tabel {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  } */
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
 }

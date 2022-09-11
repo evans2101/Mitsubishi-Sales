@@ -74,17 +74,25 @@ body {
   justify-content: space-between;
   flex-direction: row;
   padding: 90px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .bag1 img {
-  width: 300px;
+  width: 400px;
   height: 320px;
   padding-right: 80px;
   border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .pagebag1 p {
   width: 80%;
+  display: grid;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .pagebag1 h3 {
@@ -101,9 +109,16 @@ body {
   color: white;
 }
 
+.h1 {
+  text-align: center;
+}
+
 .bag3page1 {
   display: flex;
   justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
   /* flex-direction: column; */
 }
 
@@ -119,19 +134,24 @@ body {
 }
 
 .bag3page2 img {
-  width: 40%;
+  width: 60%;
 }
+
+/* .gambar {
+  width: 60px;
+  height: 40px;
+} */
 
 .canterFE74 {
   width: 60%;
 }
 
 .newPajeroSport {
-  width: 84%;
+  width: 60%;
 }
 
 .canterFE75 {
-  width: 70%;
+  width: 60%;
 }
 
 footer {
@@ -139,6 +159,8 @@ footer {
   background-color: rgb(26, 59, 92);
   display: flex;
   justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .contact a {
@@ -151,4 +173,151 @@ footer {
 
 .dealer {
   color: white;
+}
+
+/* responsive */
+
+.grid-container {
+  display: grid;
+}
+
+div.contentGallery {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .nav1 {
+    order: inherit;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .nav1 li {
+    font-size: 7px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+  }
+  .nav2 li {
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+    display: flex;
+  }
+  .navDown {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navDown img {
+    display: none;
+  }
+  .bag1 {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+
+  .container {
+    width: auto;
+    padding: 0;
+  }
+
+  .bag3page1 {
+    order: -1;
+    grid-template-columns: 1fr;
+  }
+  .bag3page1 h2 {
+    padding-top: 10px;
+    font-size: large;
+  }
+  .bag3page1 h3 {
+    font-size: small;
+  }
+  .bag3page2 h2 {
+    padding-top: 10px;
+    font-size: large;
+  }
+  .bag3page2 h3 {
+    font-size: small;
+  }
+  .pagebag1 {
+    text-align: left;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: auto;
+
+    /* text-align: center; */
+  }
+  .pagebag1 h1 {
+    text-align: left;
+    font-size: xx-large;
+  }
+  .pagebag1 p {
+    text-align: left;
+    font-size: small;
+  }
+  .page2bag2 img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    text-align: auto;
+  }
+  .bag2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+  .bag3 {
+    text-align: center;
+    width: auto;
+  }
+
+  .bag4 {
+    text-align: center;
+    width: auto;
+    background-color: grey;
+    padding: 35px 0 35px 0;
+  }
+
+  .color4 {
+    background-color: grey;
+  }
+
+  .mobil1 {
+    padding-bottom: 55px;
+  }
+  .mobil2 {
+    padding-bottom: 55px;
+  }
+  footer h2 {
+    font-size: x-large;
+  }
+  footer h4 {
+    font-size: medium;
+  }
+  footer p {
+    font-size: small;
+  }
+  .dealer h2 {
+    font-size: medium;
+  }
+  .dealer h4 {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
 }
